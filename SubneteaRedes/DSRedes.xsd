@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DSRedes" targetNamespace="http://tempuri.org/DSRedes.xsd" xmlns:mstns="http://tempuri.org/DSRedes.xsd" xmlns="http://tempuri.org/DSRedes.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DSRedes" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DSRedes" msprop:Generator_UserDSName="DSRedes">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DTRedes" msprop:Generator_TableClassName="DTRedesDataTable" msprop:Generator_TableVarName="tableDTRedes" msprop:Generator_RowChangedName="DTRedesRowChanged" msprop:Generator_TablePropName="DTRedes" msprop:Generator_RowDeletingName="DTRedesRowDeleting" msprop:Generator_RowChangingName="DTRedesRowChanging" msprop:Generator_RowEvHandlerName="DTRedesRowChangeEventHandler" msprop:Generator_RowDeletedName="DTRedesRowDeleted" msprop:Generator_RowClassName="DTRedesRow" msprop:Generator_UserTableName="DTRedes" msprop:Generator_RowEvArgName="DTRedesRowChangeEvent">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="Red" msprop:Generator_ColumnVarNameInTable="columnRed" msprop:Generator_ColumnPropNameInRow="Red" msprop:Generator_ColumnPropNameInTable="RedColumn" msprop:Generator_UserColumnName="Red" type="xs:string" minOccurs="0" />
+              <xs:element name="PrimeraIp" msprop:Generator_ColumnVarNameInTable="columnPrimeraIp" msprop:Generator_ColumnPropNameInRow="PrimeraIp" msprop:Generator_ColumnPropNameInTable="PrimeraIpColumn" msprop:Generator_UserColumnName="PrimeraIp" type="xs:string" minOccurs="0" />
+              <xs:element name="UltimaIp" msprop:Generator_ColumnVarNameInTable="columnUltimaIp" msprop:Generator_ColumnPropNameInRow="UltimaIp" msprop:Generator_ColumnPropNameInTable="UltimaIpColumn" msprop:Generator_UserColumnName="UltimaIp" type="xs:string" minOccurs="0" />
+              <xs:element name="Broadcast" msprop:Generator_ColumnVarNameInTable="columnBroadcast" msprop:Generator_ColumnPropNameInRow="Broadcast" msprop:Generator_ColumnPropNameInTable="BroadcastColumn" msprop:Generator_UserColumnName="Broadcast" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -27,8 +27,6 @@ namespace SubneteaRedes
 				ClasePrincipal.TercerOcteto = Convert.ToInt32(txbTercerOcteto.Text);
 				ClasePrincipal.CuartoOcteto = Convert.ToInt32(txbCuartoOcteto.Text);
 				ClasePrincipal.Sufijo = Convert.ToInt32(txbSufijo.Text);
-
-				
 			}
 			catch(Exception E)
 			{
@@ -37,7 +35,6 @@ namespace SubneteaRedes
 			}
 			RevisarClase(ClasePrincipal.PrimerOcteto);
 			btnVerRedes.Visibility = Visibility.Visible;
-			
 		}
 
 		private void BtnVerRedes_Click(object sender, RoutedEventArgs e)
@@ -46,6 +43,7 @@ namespace SubneteaRedes
 			win2.Show();
 			this.Close();
 		}
+
 		#endregion
 		
 		#region Revisar octetos
@@ -63,7 +61,6 @@ namespace SubneteaRedes
 				txbPrimerOcteto.Text = txbPrimerOcteto.Text.Remove(txbPrimerOcteto.Text.Length - 1);
 			}
 		}
-
 		private void TxbSegundoOcteto_TextChanged(object sender, System.Windows.Controls.TextChangedEventArgs e)
 		{
 			if (System.Text.RegularExpressions.Regex.IsMatch(txbSegundoOcteto.Text, "[^0-9]"))
@@ -238,9 +235,8 @@ namespace SubneteaRedes
 					MessageBox.Show("Algo salio mal :T");
 					break;
 			}
-			
-			
 		}
+
 		#endregion
 	}
 }

@@ -55,48 +55,46 @@ namespace SubneteaRedes
 			string PrimerHost = ClasePrincipal.PrimerHost;
 			string UltimoHost = ClasePrincipal.UltimoHost;
 			string Broadcast = ClasePrincipal.Broadcast;
-			#endregion
+            #endregion
 
-			#region Switch que asigna el numero magico segun el sufijo
-				switch (Sufijo)
-				{
-					case 1:
-						NumeroMagico = 128;
-						break;
-					case 2:
-						NumeroMagico = 64;
-						break;
-					case 3:
-						NumeroMagico = 32;
-						break;
-					case 4:
-						NumeroMagico = 16;
-						break;
-					case 5:
-						NumeroMagico = 8;
-						break;
-					case 6:
-						NumeroMagico = 4;
-						break;
-					case 7:
-						NumeroMagico = 2;
-						break;
-					case 8:
-						NumeroMagico = 1;
-						break;
+            #region Switch que asigna el numero magico segun el sufijo
+            switch (Sufijo)
+            {
+                case 1:
+                    NumeroMagico = 128;
+                    break;
+                case 2:
+                    NumeroMagico = 64;
+                    break;
+                case 3:
+                    NumeroMagico = 32;
+                    break;
+                case 4:
+                    NumeroMagico = 16;
+                    break;
+                case 5:
+                    NumeroMagico = 8;
+                    break;
+                case 6:
+                    NumeroMagico = 4;
+                    break;
+                case 7:
+                    NumeroMagico = 2;
+                    break;
+                case 8:
+                    NumeroMagico = 1;
+                    break;
 
-					default:
-					MessageBox.Show("Error al Subnetear, revisa tu red y sufijo.");
-					TerminarAplicacion();
-						break;
-					}
-				    
+                default:
+                    MessageBox.Show("Error al Subnetear, revisa tu red y sufijo.");
+                    TerminarAplicacion();
+                    break;
+            }
 
+            #endregion
 
-			#endregion
-
-			#region Switch que subnetea segun la clase usando el numero magico
-			switch (Clase)
+            #region Switch que subnetea segun la clase usando el numero magico
+            switch (Clase)
 			{
 				#region Clase A
 				case "A":
